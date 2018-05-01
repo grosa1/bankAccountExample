@@ -1,6 +1,8 @@
 from CustomerAccount import CustomerAccount
 
 class BankAccount(CustomerAccount):
+    
+    __balance = 0
 
     def __init__(self, owner, accountNumber, balance):
         super().__init__(owner, accountNumber)

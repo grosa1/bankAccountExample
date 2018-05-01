@@ -1,5 +1,8 @@
 class CustomerAccount:
 
+    __owner = ""
+    __accountNumber = ""
+
     def __init__(self, owner, accountNumber):
         self.__owner = owner
         self.__accountNumber = accountNumber
