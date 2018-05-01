@@ -1,7 +1,6 @@
 from BankAccount import BankAccount
 from AccountManager import AccountManager
 
-
 account1 = BankAccount("Giovanni", "1", 1000)
 account1.accountInfo()
 

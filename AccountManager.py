@@ -1,5 +1,4 @@
 from BankAccount import BankAccount
-
 class AccountManager:
     @staticmethod
     def bankTransfer(sourceAccount, targetAccount, amount):

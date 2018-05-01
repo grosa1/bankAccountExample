@@ -1,5 +1,4 @@
 from CustomerAccount import CustomerAccount
-
 class BankAccount(CustomerAccount):
     
     __balance = 0
