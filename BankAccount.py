@@ -16,17 +16,17 @@ class BankAccount(CustomerAccount):
 
     def withdraw(self, amount):
         if amount > self.__balance or amount < 0:
-            print("AMOUNT ERROR\n")
+            return False
         else:
             self.__balance -= amount
-            print(str(amount) + " WITHDRAW. NEW BALANCE: " + str(self.__balance) + "\n")
+            return True
         
     def deposit(self, amount):
         if amount < 0:
-            print("AMOUNT ERROR\n")
+            return False
         else:
             self.__balance += amount
-            print(str(amount) + " DEPOSIT. NEW BALANCE: " + str(self.__balance) + "\n")
+            return True
         
     def accountInfo(self):
         print("OWNER: " + super().owner + "\n" + "ACCOUNT: " + super().accountNumber + "\n" + "BALANCE: " + str(self.__balance) + "\n")
